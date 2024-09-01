@@ -1,0 +1,41 @@
+{
+  "name": "@nuitral/icons",
+  "version": "0.0.1-alpha.1",
+  "description": "Nuitral Icons",
+  "publishConfig": {
+    "access": "public"
+  },
+  "type": "module",
+  "main": "dist/cjs/nuitral-icons.cjs",
+  "module": "dist/esm/nuitral-icons.js",
+  "types": "dist/cjs/nuitral-icons.d.ts",
+  "style": "dist/nuitral-icons.scss",
+  "files": [
+    "dist/**/*"
+  ],
+  "scripts": {
+    "build": "tsx lib/scripts/index.ts",
+    "prepack": "tsx lib/scripts/packageJsonManager.ts backup && tsx lib/scripts/packageJsonManager.ts modify",
+    "postpack": "tsx lib/scripts/packageJsonManager.ts restore",
+    "format": "prettier --write '**/*.{ts,json,scss,md}'"
+  },
+  "keywords": [
+    "Nuitral",
+    "Icons"
+  ],
+  "author": "Nicola Centonze",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nuitral/icons.git"
+  },
+  "homepage": "https://github.com/nuitral/icons#readme",
+  "devDependencies": {
+    "fantasticon": "^3.0.0",
+    "prettier": "3.3.3",
+    "sass": "^1.77.8",
+    "tsx": "^4.16.2",
+    "typescript": "^5.5.3",
+    "@types/node": "^20.14.11"
+  }
+}
