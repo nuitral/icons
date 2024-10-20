@@ -1,3 +1,4 @@
+@use "sass:map";
 ${{ name }}-font: "{{ name }}"
 
 @font-face
@@ -31,5 +32,5 @@ ${{ name }}-map: (
 {{ else }}
 {{ tag }}.{{ ../prefix }}-{{ @key }}:before
 {{/ if }}
-    content: map-get(${{ ../name }}-map, "{{ @key }}")
+    content: map.get(${{ ../name }}-map, "{{ @key }}")
 {{/ each }}

@@ -1,7 +1,7 @@
 {
   "name": "@nuitral/icons",
-  "version": "0.0.1-alpha.1",
-  "description": "Nuitral Icons",
+  "version": "0.0.1-alpha.2",
+  "description": "nuitral - Icons",
   "publishConfig": {
     "access": "public"
   },
@@ -20,7 +20,7 @@
     "format": "prettier --write '**/*.{ts,json,scss,md}'"
   },
   "keywords": [
-    "Nuitral",
+    "nuitral",
     "Icons"
   ],
   "author": "Nicola Centonze",
@@ -33,7 +33,7 @@
   "devDependencies": {
     "fantasticon": "^3.0.0",
     "prettier": "3.3.3",
-    "sass": "^1.77.8",
+    "sass": "^1.79.4",
     "tsx": "^4.16.2",
     "typescript": "^5.5.3",
     "@types/node": "^20.14.11"
